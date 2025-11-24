@@ -1,52 +1,103 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* --- 1. CORE LAYOUT & GLASSMORPHISM --- */
+body {
+  --font-weight-bold: 700;
+  background-image: radial-gradient(circle at top right, rgba(56, 189, 248, 0.05), transparent 40%);
+  background-attachment: fixed;
+}
 
+/* Modernize the Explorer (Sidebar) */
+.left.sidebar {
+  background: rgba(11, 15, 26, 0.6); /* Semi-transparent */
+  backdrop-filter: blur(12px);         /* Glass effect */
+  -webkit-backdrop-filter: blur(12px);
+  border-right: 1px solid var(--lightgray);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
 
-/* The Hacker LED */
+/* Smooth Page Load Animation */
+.page > * {
+  animation: fade-in 0.6s ease-out;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- 2. COMPONENT POLISH --- */
+
+/* Glowing "Hacker" LED (Your existing code, refined) */
 .hacker-led {
   display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #00ff41; /* Matrix Green */
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e; /* Success Green */
   border-radius: 50%;
+  box-shadow: 0 0 10px #22c55e;
   margin-left: 8px;
-  vertical-align: middle;
-  
-  /* The "Breathing" Animation */
-  box-shadow: 0 0 0 0 rgba(0, 255, 65, 0.7);
-  animation: server-pulse 1.3s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 2s infinite;
 }
 
-@keyframes server-pulse {
-  0% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 255, 65, 0.7);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 255, 65, 0); /* Expands and fades out */
-  }
-  100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 255, 65, 0);
-  }
+@keyframes pulse {
+  0% { opacity: 1; box-shadow: 0 0 5px #22c55e; }
+  50% { opacity: 0.5; box-shadow: 0 0 0px #22c55e; }
+  100% { opacity: 1; box-shadow: 0 0 5px #22c55e; }
 }
 
-
-/* Make Callouts look like the Cards in your Portfolio */
-.callout {
-  background-color: #1e293b !important; /* Slate-800 (Lighter than background) */
-  border: 1px solid #334155; /* Slate-700 border */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+/* Modern Search Bar */
+.search-button {
+  background: var(--lightgray) !important;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+.search-button:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 0 15px var(--highlight);
 }
 
-/* Make Code blocks look like "Tags" */
+/* Premium Code Blocks */
 code {
   font-size: 0.85em;
-  color: var(--secondary) !important; /* Mint Green Text */
-  background: rgba(45, 212, 191, 0.1) !important; /* Very subtle mint background */
-  border-radius: 4px;
-  padding: 2px 5px;
+  color: #38bdf8 !important; /* Neon Blue text */
+  background: rgba(15, 23, 42, 0.5) !important;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+pre > code {
+  background: transparent !important;
+  border: none;
+  color: inherit !important;
+}
+
+/* Graph View: Make it Neon */
+.graph-view-container {
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px -5px rgba(0,0,0,0.3);
+}
+
+/* --- 3. RESPONSIVENESS (Mobile Fixes) --- */
+@media (max-width: 800px) {
+  .page {
+    padding: 1rem !important; /* Less padding on phones */
+  }
+  
+  h1 {
+    font-size: 2rem !important; /* Smaller titles on mobile */
+  }
+
+  /* Hide glass sidebar on mobile to save performance */
+  .left.sidebar {
+    background: var(--light);
+    backdrop-filter: none;
+    border: none;
+    height: auto;
+    position: relative;
+  }
 }

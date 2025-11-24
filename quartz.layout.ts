@@ -8,12 +8,13 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      "Portfolio": "https://habibullah.dev",
       "GitHub": "https://github.com/md8-habibullah",
+      "Portfolio": "https://habibullah.dev",
       "LinkedIn": "https://www.linkedin.com/in/habibullahs",
       "Email": "mailto:wiki@habibullah.dev",
     },
-  }),
+  }
+  ),
 }
 
 // components for pages that display a single page (e.g. a single note)
