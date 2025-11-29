@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Habibullah&#039;s Wiki</title>
+      <link>https://wiki.habibullah.dev</link>
+      <description>Last 10 notes on Habibullah&#039;s Wiki</description>
+      <generator>Habibullah's Wiki Generator</generator>
+      <item>
+    <title>DNS Architecture &amp; Management</title>
+    <link>https://wiki.habibullah.dev/DevOps/DNS-Deep-Dive</link>
+    <guid>https://wiki.habibullah.dev/DevOps/DNS-Deep-Dive</guid>
+    <description><![CDATA[ A comprehensive guide to the Domain Name System, recursion, caching, and overriding resolvers on Linux/Windows. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>The Ultimate Docker Handbook</title>
+    <link>https://wiki.habibullah.dev/DevOps/Docker-Ultimate-Guide</link>
+    <guid>https://wiki.habibullah.dev/DevOps/Docker-Ultimate-Guide</guid>
+    <description><![CDATA[ A deep dive into containerization, image layering, multi-stage builds, and security hardening on Linux. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>Kubernetes (K8s) Survival Guide</title>
+    <link>https://wiki.habibullah.dev/DevOps/Kubernetes-Basics</link>
+    <guid>https://wiki.habibullah.dev/DevOps/Kubernetes-Basics</guid>
+    <description><![CDATA[ Understanding Container Orchestration, Control Plane architecture, Pods, Services, and kubectl mastery. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>System Design 101 - The Architecture of Scale</title>
+    <link>https://wiki.habibullah.dev/DevOps/System-Design-Basics</link>
+    <guid>https://wiki.habibullah.dev/DevOps/System-Design-Basics</guid>
+    <description><![CDATA[ The fundamental principles of building scalable, reliable, and maintainable distributed systems. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>C Programming - The Mother of Languages</title>
+    <link>https://wiki.habibullah.dev/Development/C-Programming</link>
+    <guid>https://wiki.habibullah.dev/Development/C-Programming</guid>
+    <description><![CDATA[ A deep dive into Pointers, Memory Management, System Calls, and the compilation process on Linux. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>C++ Ultimate Survival Guide</title>
+    <link>https://wiki.habibullah.dev/Development/CPP-Programming</link>
+    <guid>https://wiki.habibullah.dev/Development/CPP-Programming</guid>
+    <description><![CDATA[ A massive reference for C++20, STL, Memory Management, OOP, and Interview Patterns. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>JavaScript - The Ultimate Guide</title>
+    <link>https://wiki.habibullah.dev/Development/JavaScript-Ultimate-Guide</link>
+    <guid>https://wiki.habibullah.dev/Development/JavaScript-Ultimate-Guide</guid>
+    <description><![CDATA[ A deep dive into the V8 Engine, Event Loop, Closures, Prototypes, and Async patterns. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>Python Advanced - Internals &amp; Architecture</title>
+    <link>https://wiki.habibullah.dev/Development/Python-Advanced</link>
+    <guid>https://wiki.habibullah.dev/Development/Python-Advanced</guid>
+    <description><![CDATA[ Mastering the GIL, Asyncio, Metaprogramming, and Memory Management in Python 3.14+. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>The Ultimate SSG Tier List - Tools for Modern Webs</title>
+    <link>https://wiki.habibullah.dev/Development/Static-Site-Generator-(SSG)-List</link>
+    <guid>https://wiki.habibullah.dev/Development/Static-Site-Generator-(SSG)-List</guid>
+    <description><![CDATA[ A comprehensive analysis of Hugo, Astro, Quartz, Next.js, and more. Which one fits your engineering needs? ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item><item>
+    <title>Infrastructure - JUICE (Fedora Workstation)</title>
+    <link>https://wiki.habibullah.dev/Linux-Special/Fedora-Workstation</link>
+    <guid>https://wiki.habibullah.dev/Linux-Special/Fedora-Workstation</guid>
+    <description><![CDATA[ Hardware specification, filesystem architecture, and toolchain configuration for my primary mobile workstation. ]]></description>
+    <pubDate>Sat, 29 Nov 2025 13:06:59 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
